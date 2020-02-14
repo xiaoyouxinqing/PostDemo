@@ -37,13 +37,10 @@ struct CommentInputView: View {
                     
                     Button(action: {
                         if self.text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
-                            withAnimation {
-                                self.showEmptyTextHUD = true
-                            }
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                                withAnimation {
-                                    self.showEmptyTextHUD = false
-                                }
+                            self.showEmptyTextHUD = true
+                            
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                                self.showEmptyTextHUD = false
                             }
                             return
                         }
@@ -61,9 +58,11 @@ struct CommentInputView: View {
                 .foregroundColor(.black)
             }
             
-            if showEmptyTextHUD {
-                Text("评论不能为空")
-            }
+            Text("评论不能为空")
+                .scaleEffect(showEmptyTextHUD ? 1 : 0.5)
+                .animation(.spring(dampingFraction: 0.5))
+                .opacity(showEmptyTextHUD ? 1 : 0)
+                .animation(.easeInOut)
         }
         .padding(.bottom, keyboardResponder.keyboardHeight)
     }
