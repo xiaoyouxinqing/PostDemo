@@ -23,7 +23,7 @@ struct CommentInputView: View {
     var body: some View {
         ZStack {
             VStack(spacing: 0) {
-                CommentTextView(text: $text)
+                CommentTextView(text: $text, beginEditingOnAppear: true)
                 
                 HStack(spacing: 0) {
                     Button(action: {
@@ -65,6 +65,7 @@ struct CommentInputView: View {
                 .animation(.easeInOut)
         }
         .padding(.bottom, keyboardResponder.keyboardHeight)
+        .edgesIgnoringSafeArea(keyboardResponder.keyboardShow ? .bottom : [])
     }
 }
 

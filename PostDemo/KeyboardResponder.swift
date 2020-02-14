@@ -9,6 +9,7 @@
 import SwiftUI
 
 class KeyboardResponder: ObservableObject {
+    @Published var keyboardShow: Bool = false
     @Published var keyboardHeight: CGFloat = 0
     
     init() {
@@ -21,9 +22,11 @@ class KeyboardResponder: ObservableObject {
     @objc private func keyboardWillShow(_ notification: Notification) {
         guard let frame = notification.userInfo?[UIWindow.keyboardFrameEndUserInfoKey] as? CGRect else { return }
         keyboardHeight = frame.height
+        keyboardShow = true
     }
     
     @objc private func keyboardWillHide(_ notification: Notification) {
         keyboardHeight = 0
+        keyboardShow = false
     }
 }
