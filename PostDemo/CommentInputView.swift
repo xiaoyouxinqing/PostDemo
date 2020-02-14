@@ -14,7 +14,7 @@ struct CommentInputView: View {
     @State private var text: String = ""
     @State private var showEmptyTextHUD: Bool = false
     
-    @Binding var presentComment: Bool
+    @Environment(\.presentationMode) var presentationMode
     
     @EnvironmentObject var userData: UserData
     
@@ -27,7 +27,7 @@ struct CommentInputView: View {
                 
                 HStack(spacing: 0) {
                     Button(action: {
-                        self.presentComment = false
+                        self.presentationMode.wrappedValue.dismiss()
                     }) {
                         Text("取消")
                             .padding()
@@ -51,7 +51,7 @@ struct CommentInputView: View {
                         var post = self.post
                         post.commentCount += 1
                         self.userData.update(post)
-                        self.presentComment = false
+                        self.presentationMode.wrappedValue.dismiss()
                     }) {
                         Text("发送")
                             .padding()
@@ -71,6 +71,6 @@ struct CommentInputView: View {
 
 struct CommentInputView_Previews: PreviewProvider {
     static var previews: some View {
-        CommentInputView(post: UserData().recommedPostList.list[0], presentComment: .constant(true))
+        CommentInputView(post: UserData().recommedPostList.list[0])
     }
 }

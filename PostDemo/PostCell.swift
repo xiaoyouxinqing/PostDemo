@@ -31,7 +31,7 @@ struct PostCell: View {
                     .overlay(
                         PostVIPBadge(vip: post.vip)
                             .offset(x: 16, y: 16)
-                    )
+                )
                 
                 VStack(alignment: .leading, spacing: 5) {
                     Text(post.name)
@@ -83,7 +83,7 @@ struct PostCell: View {
                     self.presentComment = true
                 }
                 .sheet(isPresented: $presentComment) {
-                    CommentInputView(post: post, presentComment: self.$presentComment)
+                    CommentInputView(post: post)
                         .environmentObject(self.userData)
                 }
                 
