@@ -123,3 +123,67 @@ YouTube: https://youtu.be/St4FQDxX96c
 bilibili: https://www.bilibili.com/video/BV1SE411n7Hq/
 
 YouTube: https://youtu.be/7JAzIJH7THM
+
+## Lesson 11 - 1
+
+URLSession 发送网络请求，获取微博列表
+
+bilibili: https://www.bilibili.com/video/BV1fC4y1s7Js/
+
+YouTube: https://youtu.be/m9VNJKb_5Q4
+
+## Lesson 11 - 2
+
+HTTP 协议介绍
+
+URLRequest 设置网络请求参数
+
+bilibili: https://www.bilibili.com/video/BV1Df4y1S7NR/
+
+YouTube: https://youtu.be/9yRhRrYhyY4
+
+## Lesson 12 - 1
+
+安装 CocoaPods
+
+项目添加开源网络库 Alamofire
+
+简单使用 Alamofire
+
+bilibili: https://www.bilibili.com/video/BV1gT4y137Rd/
+
+YouTube: https://youtu.be/Jzvv4UaskuU
+
+## Lesson 12 - 2
+
+构建网络模块
+
+bilibili: https://www.bilibili.com/video/BV11K4y1b76g/
+
+YouTube: https://youtu.be/jT9o4r_cFJM
+
+## Lesson 12 - 3
+
+构建网络模块
+
+bilibili: https://www.bilibili.com/video/BV1bZ4y1s7kk/
+
+YouTube: https://youtu.be/1rOrHNwftCY
+
+## Lesson 12 - 4
+
+网络模块细节
+
+模块设计总结
+
+bilibili: https://www.bilibili.com/video/BV1qC4y1W78n/
+
+YouTube: https://youtu.be/sBzsBhCCnd0
+
+## Lesson 11~12 补充
+
+GitHub 切换分支，下载代码，运行项目
+
+bilibili: https://www.bilibili.com/video/BV1SV411k7Hw/
+
+YouTube: https://youtu.be/W8-w29pwReE
