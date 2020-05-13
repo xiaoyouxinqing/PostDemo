@@ -8,6 +8,14 @@ Swift 编程语言、SwiftUI 框架，学新技术，放眼未来
 
 欢迎在视频平台关注 **BBCo**
 
+## 代码分支
+
+课程代码放在不同的分支，点击以下分支获取代码
+
+Lesson 1~10 代码放在 master 分支（当前分支）
+
+Lesson 11~12 代码放在 [NetworkDemo 分支](https://github.com/xiaoyouxinqing/PostDemo/tree/NetworkDemo)
+
 ## Lesson 1
 
 创建 Xcode project (项目、工程)
