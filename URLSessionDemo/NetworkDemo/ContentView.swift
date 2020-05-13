@@ -24,7 +24,7 @@ struct ContentView: View {
             Button(action: {
                 self.text = ""
             }) {
-                Text("Clear").font(.system(size: 12))
+                Text("Clear").font(.largeTitle)
             }
         }
     }
