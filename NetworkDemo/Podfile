@@ -1,0 +1,8 @@
+platform :ios, '13.2'
+
+target 'NetworkDemo' do
+  use_frameworks!
+
+  pod 'Alamofire', '~> 5.1'
+
+end
