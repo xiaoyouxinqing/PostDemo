@@ -187,3 +187,19 @@ GitHub 切换分支，下载代码，运行项目
 bilibili: https://www.bilibili.com/video/BV1SV411k7Hw/
 
 YouTube: https://youtu.be/W8-w29pwReE
+
+## Lesson 13 - 1
+
+加载网络图片
+
+bilibili: https://www.bilibili.com/video/BV1ia4y1e74N/
+
+YouTube: https://youtu.be/yq-eYpQcyd0
+
+## Lesson 13 - 2
+
+SDWebImageSwiftUI 加载网络图片
+
+bilibili: https://www.bilibili.com/video/BV1U54y1D7Yi/
+
+YouTube: https://youtu.be/Bw0w63Hm9Io
