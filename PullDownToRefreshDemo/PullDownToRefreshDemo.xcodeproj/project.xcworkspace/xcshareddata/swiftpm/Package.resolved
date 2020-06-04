@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "BBSwiftUIKit",
+        "repositoryURL": "https://github.com/Silence-GitHub/BBSwiftUIKit.git",
+        "state": {
+          "branch": null,
+          "revision": "e8a6b187f587d4b44771a51a8c27af14d210ff8f",
+          "version": "0.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
