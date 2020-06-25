@@ -9,15 +9,15 @@
 import Combine
 
 class UserData: ObservableObject {
-    @Published var recommedPostList: PostList = loadPostListData("PostListData_recommend_1.json")
+    @Published var recommendPostList: PostList = loadPostListData("PostListData_recommend_1.json")
     @Published var hotPostList: PostList = loadPostListData("PostListData_hot_1.json")
     
     private var recommendPostDic: [Int: Int] = [:] // id: index
     private var hotPostDic: [Int: Int] = [:] // id: index
     
     init() {
-        for i in 0..<recommedPostList.list.count {
-            let post = recommedPostList.list[i]
+        for i in 0..<recommendPostList.list.count {
+            let post = recommendPostList.list[i]
             recommendPostDic[post.id] = i
         }
         for i in 0..<hotPostList.list.count {
@@ -34,14 +34,14 @@ enum PostListCategory {
 extension UserData {
     func postList(for category: PostListCategory) -> PostList {
         switch category {
-        case .recommend: return recommedPostList
+        case .recommend: return recommendPostList
         case .hot: return hotPostList
         }
     }
     
     func post(forId id: Int) -> Post? {
         if let index = recommendPostDic[id] {
-            return recommedPostList.list[index]
+            return recommendPostList.list[index]
         }
         if let index = hotPostDic[id] {
             return hotPostList.list[index]
@@ -51,7 +51,7 @@ extension UserData {
     
     func update(_ post: Post) {
         if let index = recommendPostDic[post.id] {
-            recommedPostList.list[index] = post
+            recommendPostList.list[index] = post
         }
         if let index = hotPostDic[post.id] {
             hotPostList.list[index] = post
