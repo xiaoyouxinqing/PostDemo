@@ -1,0 +1,10 @@
+platform :ios, '13.0'
+
+target 'PostDemo' do
+  use_frameworks!
+
+  pod 'Alamofire'
+  pod 'BBSwiftUIKit'
+  pod 'SDWebImageSwiftUI'
+
+end
