@@ -14,7 +14,7 @@ Swift 编程语言、SwiftUI 框架，学新技术，放眼未来
 
 Lesson 1~10 代码放在 master 分支（当前分支）
 
-Lesson 11~14 代码放在 [NetworkDemo 分支](https://github.com/xiaoyouxinqing/PostDemo/tree/NetworkDemo)
+Lesson 11~17 代码放在 [NetworkDemo 分支](https://github.com/xiaoyouxinqing/PostDemo/tree/NetworkDemo)
 
 ## Lesson 1
 
