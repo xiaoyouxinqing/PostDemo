@@ -237,3 +237,11 @@ YouTube: https://youtu.be/LlLnSb3onDM
 bilibili: https://www.bilibili.com/video/BV1rv411B7fj/
 
 YouTube: https://youtu.be/lnEFk7NnTxg
+
+## Lesson 11~17 总结
+
+课程总结，重要知识点回顾
+
+bilibili: https://www.bilibili.com/video/BV1XZ4y1M7qR/
+
+YouTube: https://youtu.be/UeycEQ-IepQ
